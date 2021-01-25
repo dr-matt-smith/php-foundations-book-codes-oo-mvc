@@ -1,21 +1,27 @@
 <?php
-
+namespace Tudublin;
 
 class WebApplication
 {
+    private $mainController;
+
+    public function __construct()
+    {
+        $this->mainController = new MainController();
+    }
+
     public function run()
     {
         $action = filter_input(INPUT_GET, 'action');
-        $mainController = new MainController();
 
         switch($action) {
             case 'jokes':
-                $mainController->jokes();
+                $this->mainController->jokes();
                 break;
 
             case 'index':
             default:
-                $mainController->index();
+                $this->mainController->index();
         }
     }
 }

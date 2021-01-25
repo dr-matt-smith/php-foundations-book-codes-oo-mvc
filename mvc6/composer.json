@@ -1,6 +1,6 @@
 {
   "scripts":{
-    "run":"php -S localhost:8000 -t ./public"
+    "serve":"php -S localhost:8000 -t ./public"
   },
   "autoload":{
     "psr-4":{
