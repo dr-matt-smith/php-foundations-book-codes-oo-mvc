@@ -1,7 +1,7 @@
 <?php
+namespace Tudublin;
 
-
-class WebApplication
+class Application
 {
     private $mainController;
 

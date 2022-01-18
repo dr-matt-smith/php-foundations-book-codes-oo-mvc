@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Tudublin\WebApplication;
+use Tudublin\Application;
 
-$app = new WebApplication();
+$app = new Application();
 $app->run();

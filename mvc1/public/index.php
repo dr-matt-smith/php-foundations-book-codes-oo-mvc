@@ -1,5 +1,6 @@
 <?php
+require_once __DIR__ . '/../src/Application.php';
 
-require_once __DIR__ . '/../src/WebApplication.php';
-$app = new WebApplication();
+$app = new Application();
 $app->run();
+

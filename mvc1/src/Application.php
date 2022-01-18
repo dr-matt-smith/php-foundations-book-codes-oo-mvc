@@ -1,7 +1,6 @@
 <?php
 
-
-class WebApplication
+class Application
 {
     public function run()
     {
